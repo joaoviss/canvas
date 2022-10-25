@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #edb;
+    height: 100vh;
+    padding: 5px;
+}
+.main {
+    position: relative;
+    max-width: 600px;   
+    height: 500px;
+    width: 100%;
+    max-height: calc(100vw * 0.833);
+    box-shadow: 3px 3px 8px #000;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.main canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#game, #enemy {
+   border-bottom: 30px solid;
+}
+.off {
+    display: none;
+}
